@@ -1,0 +1,78 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(9, 38, 53);
+    color: rgb(238, 0, 0);
+    text-align: center;
+    margin:0%;
+}
+
+#upload-form{
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(27, 66, 66);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#file-input{
+    display: none;
+}
+.upload-btn{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.upload-btn input[type=file]{
+    font-size: 100px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 0;
+}
+
+.upload-btn label{
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 25px ;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(92, 131, 116);
+    border-radius: 16px;
+    color: rgb(8, 0, 255);
+}
+.upload-btn label:hover{
+    background-color: rgb(206, 10, 10);
+}
+button{
+    cursor: pointer;
+    background-color: rgb(158, 200, 185);
+    color: rgb(67, 32, 32);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(183, 171, 83);
+}
+
+.result-container{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+@media (max-width:600px){
+
+    .upload-btn label, button{
+        width: 100px;
+        box-sizing: border-box;
+    }
+    #upload-form{
+        padding: 15px;
+    }
+
+}
